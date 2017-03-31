@@ -7,7 +7,7 @@ module LeanKitKanban
       attr_accessor :email, :password, :account
 
       LKK_DOMAIN = "leankit.com"
-      API_SUFFIX = "/kanban/api"
+      API_SUFFIX = "/io"
 
       def validate
         raise NoCredentials if email.nil? || password.nil?
