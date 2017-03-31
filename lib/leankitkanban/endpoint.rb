@@ -5,7 +5,7 @@ module LeanKitKanban
     GET_BOARD                 = "/board/{boardID}"
 
     # Card endpoints
-    # GET_CARDS         = "/card"
+    GET_CARDS         = "/card"
     DELETE_CARD      = "/card/{cardID}"
     FIND_CARD        = "/card/{cardID}"
     ADD_CARD         = "/card"

@@ -4,15 +4,19 @@ module LeanKitKanban
     include LeanKitRequest
     include Endpoint
 
+    def self.all
+      get(build_api_endpoint(GET_CARDS))
+    end
+
     def self.delete(card_id)
-      delete(build_api_endpoint(DELETE_CARD, card_id: card_id), {})
+      delete(build_api_endpoint(DELETE_CARD, card_id: card_id))
     end
 
     def self.find(card_id)
       get(build_api_endpoint(FIND_CARD, board: board_id, card: card_id))
     end
 
-    def self.addbody)
+    def self.add(body)
       post(build_api_endpoint(ADD_CARD), body)
     end
 
