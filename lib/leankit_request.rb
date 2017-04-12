@@ -5,10 +5,10 @@ module LeanKitRequest
 
   module ClassMethods
     private
-    def get(api_call)
+    def get(api_call, options = {})
       url      = "#{LeanKitKanban::Config.uri}#{api_call}"
       headers("Content-Type" => "application/json", "Accept" => "application/json")
-      response = super(url, LeanKitKanban::Config.basic_auth_hash)
+      response = super(url, {query: options}.merge(LeanKitKanban::Config.basic_auth_hash))
       parse_body(response.body)
     end
 
