@@ -41,7 +41,7 @@ describe LeanKitKanban::Config do
     end
 
     it "returns the domain including the account name" do
-      LeanKitKanban::Config.uri.should eql "https://#{TEST_ACCOUNT}.leankit.com/kanban/api"
+      LeanKitKanban::Config.uri.should eql "https://#{TEST_ACCOUNT}.leankit.com/io"
     end
   end
 
