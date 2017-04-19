@@ -16,12 +16,12 @@ module LeanKitKanban
       get(build_api_endpoint(FIND_CARD, card: card_id))
     end
 
-    def self.add(body)
-      post(build_api_endpoint(ADD_CARD), body)
-    end
-
-    def self.update(body)
-      patch(build_api_endpoint(UPDATE_CARD), body)
-    end
+    # def self.add(body)
+    #   post(build_api_endpoint(ADD_CARD), body)
+    # end
+    #
+    # def self.update(body)
+    #   patch(build_api_endpoint(UPDATE_CARD), body)
+    # end
   end
 end
