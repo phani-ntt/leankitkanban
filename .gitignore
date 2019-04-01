@@ -2,3 +2,4 @@
 .rvmrc
 .rbenv-version
 Gemfile.lock
+.idea
